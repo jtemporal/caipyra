@@ -78,4 +78,5 @@ Na Carreta Furacão?
 
 ## Contributing
 PRs are welcome, if you have any questions don't be afraid to open an issue.
+
 And remember: Always pull before pushing =)
