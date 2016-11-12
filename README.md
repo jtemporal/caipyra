@@ -3,7 +3,7 @@ import caipyra module code
 
 ## Usage
 
-```{py}
+```
 >>> from caipyra import this
 Caipyra por Humberto Diógenes
 
