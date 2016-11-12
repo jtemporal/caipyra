@@ -1,4 +1,9 @@
 # coding: utf-8
+import os
+import sys
+import math
+import shutil
+
 s = u"""Pnvclen cbe Uhzoregb Qvótrarf
 
 An zvaun green é znghgb
@@ -70,7 +75,29 @@ for c in (65, 97):
     for i in range(26):
         d[chr(i+c)] = chr((i+13) % 26 + c)
 
-print("".join([d.get(c, c) for c in s]))
+terminal_size = shutil.get_terminal_size()
+number_of_lines_in_text = s.count("\n") + 1
+
+decifered_text = "".join([d.get(c, c) for c in s]).split("\n")
+number_of_lines_in_text = number_of_lines_in_text + decifered_text.count("\n")
+
+if "darwin" in sys.platform or 'linux' in sys.platform:
+    os.system('clear')
+elif "win" in sys.platform:
+    os.system('cls')
+
+number_of_pages = math.ceil(number_of_lines_in_text / terminal_size.lines)
+start = 0
+end = terminal_size.lines - decifered_text.count("\n") - 1
+for page in range(number_of_pages):
+    print("\n".join(decifered_text[start:end]))
+    input()
+    start += terminal_size.lines
+    if (end + start < number_of_lines_in_text):
+        end += start
+    else:
+        end = number_of_lines_in_text
+
 
 def java():
     print('É mentiiiira!!!')
