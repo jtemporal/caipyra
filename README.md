@@ -23,6 +23,9 @@ Na do Andrews é capiau
 Mas aqui é caipira
 
 Continue (Y/n)? n
+
+>>> this.link()  # abre a apresentação do Import Caipyra no youtube
+
 >>> from caipyra import java
 É mentiiiira!!!
 >>>
