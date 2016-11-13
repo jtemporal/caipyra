@@ -6,4 +6,5 @@ python:
   - "3.3"
   - "3.4"
   - "3.5"
-install: true
+install: "pip install flake8"
+script: "flake8 --ignore=F821"
