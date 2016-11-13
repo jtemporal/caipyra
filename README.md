@@ -1,6 +1,11 @@
 # caipyra
 import caipyra module code
 
+## Installation
+```
+pip install caipyra
+```
+
 ## Usage
 
 ```
