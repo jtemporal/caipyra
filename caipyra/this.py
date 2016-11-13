@@ -75,7 +75,7 @@ for c in (65, 97):
 s_list = s.split('\n\n')
 
 for index, verse in enumerate(s_list):
-    print("\n"+"".join([d.get(c, c) for c in verse]))
+    print("\n" + "".join([d.get(c, c) for c in verse]))
     if index < len(s_list) - 1:
 
         # Checks Python major version to accepting data from user
