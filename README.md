@@ -1,5 +1,6 @@
 # import caipyra - [Caipyra Event Poem](http://caipyra.python.org.br/)
 [![PyPI version](https://badge.fury.io/py/caipyra.svg)](https://badge.fury.io/py/caipyra)
+[![Build Status](https://travis-ci.org/jtemporal/import_caipyra.svg?branch=master)](https://travis-ci.org/jtemporal/import_caipyra)
 
 ## Installation
 ```
