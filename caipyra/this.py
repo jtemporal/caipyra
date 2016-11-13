@@ -1,5 +1,6 @@
 # coding: utf-8
 import sys
+import webbrowser
 
 s = u"""Pnvclen cbe Uhzoregb Qvótrarf
 
@@ -86,3 +87,7 @@ for index, verse in enumerate(s_list):
 
         if next.lower() == 'n':
             break
+
+
+def link():
+    webbrowser.open('https://www.youtube.com/watch?v=BNmNSHu9bMU')
