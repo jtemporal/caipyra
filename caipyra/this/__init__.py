@@ -1,4 +1,6 @@
 # coding: utf-8
+import sys
+
 s = u"""Pnvclen cbe Uhzoregb Qvótrarf
 
 An zvaun green é znghgb
@@ -75,5 +77,12 @@ s_list = s.split('\n\n')
 for index, verse in enumerate(s_list):
     print("\n"+"".join([d.get(c, c) for c in verse]))
     if index < len(s_list) - 1:
-        if input('\nContinue (Y/n)?').lower() == 'n':
+
+        # Checks Python major version to accepting data from user
+        if sys.version_info.major == 2:
+            next = raw_input('\nContinue (Y/n)? ')
+        else:
+            next = input('\nContinue (Y/n)? ')
+
+        if next.lower() == 'n':
             break
