@@ -1,5 +1,5 @@
-# caipyra
-import caipyra module code
+# import caipyra - [Caipyra Event Poem](http://caipyra.python.org.br/)
+[![PyPI version](https://badge.fury.io/py/caipyra.svg)](https://badge.fury.io/py/caipyra)
 
 ## Installation
 ```
