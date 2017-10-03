@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='caipyra',
-      version='0.2',
+      version='0.3',
       description='Caipyra 2016 poem',
       url='http://github.com/jtemporal/caipyra',
       author='Jessica Temporal',
