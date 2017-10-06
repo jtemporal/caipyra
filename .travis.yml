@@ -6,3 +6,12 @@ python:
   - "3.5"
 install: "pip install flake8"
 script: "flake8 --ignore=F821"
+
+deploy:
+  provider: pypi
+  distributions: "sdist bdist_wheel"
+  user: jtemporal
+  password: $PYPI_PASSWORD
+  on:
+    branch: master
+    repo: jtemporal/caipyra
