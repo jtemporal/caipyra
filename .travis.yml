@@ -16,6 +16,9 @@ jobs:
     script: "flake8 --ignore=F821"
 
   - stage: deploy
+    python:
+      - "2.7"
+      - "3.5"
     deploy:
       provider: pypi
       distributions: "sdist bdist_wheel"
