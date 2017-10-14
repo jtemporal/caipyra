@@ -1,6 +1,6 @@
 # coding: utf-8
-import sys
 import webbrowser
+import pydoc
 
 s = u"""Pnvclen cbe Uhzoregb Qvótrarf
 
@@ -73,20 +73,7 @@ for c in (65, 97):
     for i in range(26):
         d[chr(i + c)] = chr((i + 13) % 26 + c)
 
-s_list = s.split('\n\n')
-
-for index, verse in enumerate(s_list):
-    print("\n" + "".join([d.get(c, c) for c in verse]))
-    if index < len(s_list) - 1:
-
-        # Checks Python major version to accepting data from user
-        if sys.version_info.major == 2:
-            next = raw_input('\nContinue (Y/n)? ')
-        else:
-            next = input('\nContinue (Y/n)? ')
-
-        if next.lower() == 'n':
-            break
+pydoc.pager(''.join([d.get(c, c) for c in s]))
 
 
 def link():
