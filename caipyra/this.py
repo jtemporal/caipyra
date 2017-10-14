@@ -1,5 +1,4 @@
 # coding: utf-8
-import sys
 import webbrowser
 import pydoc
 
@@ -75,6 +74,7 @@ for c in (65, 97):
         d[chr(i + c)] = chr((i + 13) % 26 + c)
 
 pydoc.pager(''.join([d.get(c, c) for c in s]))
+
 
 def link():
     webbrowser.open('https://www.youtube.com/watch?v=BNmNSHu9bMU')
