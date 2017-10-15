@@ -1,79 +1,76 @@
 # coding: utf-8
 import webbrowser
 import pydoc
+from vigenere import decrypt
 
-s = u"""Pnvclen cbe Uhzoregb Qvótrarf
+s = u"""Rybwmep ivf Wsfiseim Kwóvcglg
 
-An zvaun green é znghgb
-Dhr é dhrz irvb qb zngb
-Bh orenqêeb, qb evb
-zrezb an orven
-An qb Naqerjf é pncvnh
-Znf ndhv é pnvcven
+Lt avcft hrgpt é bymbhb
+Onl é onla kcbv qd fhhb
+Mn prgywêfb, wv exm
+tsebm uo qcbyo
+Cy kc Plwysjh é qnegtb
+Zpq hehx é qnxnbyo
 
-Rzonedhrv arffn ivntrz
-N pbaivgr qb "frbpnz"
-B Fretvaub qn Pnzreba
+Cfioefsxp atqlh ixyzla
+P vvbixrx rb "llcppk"
+C Hcknwawm ko Ryflfbc
 
-Oben crtne rffr obaqr?
-Sreanaqb qvffr dhr
-cbe ryr gá Znffn!
-Znepb, "Pnqê Ebtê?"
-Svpbh an tenawn pbz Cnhyn
-R Wrffvpn aãb cbqr ive
-Svpbh cerfn ab Grzcbeny
+Icep ilung xzgr zhurr?
+Ylfaplwv qxqll djc
+wce cel gá Fhgfp!
+Toerm, "Ppbê Fbvê?"
+Sxahb ap zyoayy jcz Ntbzn
+C Qsfhgvh aãm wcqt opf
+Ugvvi epxzo cm Aszemkhz
 
-Niryvab sbv ceb Fnzon
-Pbz Yrgípvn qn Cbegryyn
-Cnffnenz ab One Frzragr
-Arz pbaivqnenz n tragr
-Qrfpbafvqrençãb gbgny
+Yolzvcm mcv nkv Fpkuh
+Pdk Ssgíabh qp Ivfgtjeh
+Cpqlhfnb gv Opp Zsztlml
+Atk jcakgwhfnb t urcrx
+Rrhahugvsckhçãd mvhna
 
-N Znev ynetbh Frbpnz
-R sbv rzoben pbz b Sbsãb
-Frz fnore fr vn qne pregb
-Naqerjf svpbh Zrqvab
-R npnobh sbv qrfvfgvab
+H Zppb zngehb Ftmvha
+T yvw tkuvfn aht b Dhmãb
+Qxt fpzxy ft bh qpp jseim
+Hbqgcpz sxahb Ztbbuc
+T tjoods mcv bxzwfiggv
 
-Uhzoregb, ibpé é qr baqr?
-Rh fbh Qvótrarf
-Znf zvaun pvqnqr é Angny
-B Encun qb bhgeb Evb
-Dhnfr ongrh zvaun pnegrven
-Znf rh aãb znedhrv oborven
-R nvaqn npurv b yrx yrtny
+Wsfiseim, jbré é qt hurr?
+Xb fds Kwóvcglg
+Byl avcft qvsywl é Ltaoy
+M Yocwy kc dsmyc Ggh
+Ehpqx pnicn avcft qngrxpfn
+Ktz rj gãc bykxirx uvprxpt
+S pggko paalw d ely aczhz
 
-B riragb Fra Enznyub
-Aãb é n zrfzn pbvfn
-R rh gnzoéz fragv snygn
-Qndhryr pbzchgnqbe
-B zryube dhr wá iv
-Npub dhr ren hz Qéb
-Fó aãb gvaun n shaçãb fyrrc
-Qr abvgr ivenin grgéh
+M ljrcrh Grc Khanafh
+Bãd é o bclto rmbzo
+T xb gpkuéa hcgaw uyeao
+Syjbsyt vvacjrtkce
+M tsywmk eht cá ix
+Tjvb onl rgy ba Séh
+Gó lãv gxlah n dnuçãd lssre
+Wl adgml ixptco icméi
 
-Zrh nzvtb, ahapn iv
-Hzn cerfrcnqn gãb tenaqr
-Crafr ahzn neehznçãb
-Gvaun Bcra One qr cnçbpn
-Pbz qvervgb n dhragãb
+Kxb nbgzv, csgjo kg
+Ban nklgreywh gãm nfncbx
+Drcqx bhby hfejktçãb
+Rbuvn Milb Qyk rr ntçcpp
+Vva sgklwgd t ehtlmãc
 
-R dhnaqb ivrerz gr snyne
-Qr dhnydhre grpabybtvn
-Bh yvathntrz qr cebtenznçãb
-Crethagr nb pnoen, an yngn:
+C xincbh jvtpxt gt yhzng
+Wl djyexirg mlqadjhnwn
+Mn zvcenhurb wl cgmzyozpçãv
+Ctpzbbgt tv ppzkh, cy sogp:
 
-– Arffn ghn pbasreêapvn
-Ibpêf iãb ceb one
-Rapure n pnen
-An Pneergn Shenpãb?"""
+– Cclzo ist qbcdxyêargt
+Jbrêl jãd iyc qyk
+Sarfxy n atyo
+Cy Joegcmh Sjptjãb?"""
 
-d = {}
-for c in (65, 97):
-    for i in range(26):
-        d[chr(i + c)] = chr((i + 13) % 26 + c)
 
-pydoc.pager(''.join([d.get(c, c) for c in s]))
+pydoc.pager(decrypt('python', s))
 
 
 def link():
