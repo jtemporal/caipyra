@@ -1,6 +1,9 @@
 # Code inspired by
 # http://programeveryday.com/post/implementing-a-basic-vigenere-cipher-in-python/
 
+# version with encrypter
+# https://gist.github.com/jcemelanda/cba27615f50b2c80cbcd5fc1188d4f43
+
 from itertools import cycle
 from functools import reduce
 
