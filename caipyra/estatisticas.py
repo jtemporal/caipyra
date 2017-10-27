@@ -9,9 +9,9 @@ dados = {
     'sonhos': {
         'desc': 'sonhos',
         'ano': {2016: 696000,
-                # como não foi informado o valor de sonhos em 2017 calculou-se a
-                # estimativa da quantidade de sonhos na razão de
-                # crescimento do consumo de paçoquinhas
+                # como não foi informado o valor de sonhos em 2017
+                # calculou-se a estimativa da quantidade de sonhos na
+                # razão de  crescimento do consumo de paçoquinhas
                 2017: 1435500}},
     'quentao': {
         'desc': 'quentão',
