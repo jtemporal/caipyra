@@ -88,3 +88,24 @@ ENV/
 
 # vim
 *.swp
+
+#Executables
+.o
+.class
+.pyc
+
+#output directories
+/bin
+/out
+/target
+
+#files generated at runtime
+.log
+.lock
+.tmp
+
+#hidden files
+.DS_Store
+.Thumbs.db
+
+.idea/workspace.xml
