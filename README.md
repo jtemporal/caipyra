@@ -11,11 +11,9 @@ pip install caipyra
 ## Usage
 
 ```
->>> from caipyra import this
+>>> from caipyra import this # Abre o texto paginado
 
 Caipyra por Humberto Diógenes
-
-Continue (Y/n)? y
 
 Na minha terra é matuto
 Que é quem veio do mato
@@ -24,7 +22,10 @@ mermo na beira
 Na do Andrews é capiau
 Mas aqui é caipira
 
-Continue (Y/n)? n
+Embarquei nessa viagem
+A convite do "seocam"
+O Serginho da Cameron
+:
 
 >>> this.link()  # abre a apresentação do Import Caipyra no youtube
 
